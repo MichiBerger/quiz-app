@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="stylesheet" href="../index.css" />
+    <title>Document</title>
+  </head>
+  <body app-grid h-500>
+    <header class="bg-dark" style="position: fixed; top: 0; z-index: 1; width: 100%;">
+      <h1 class="fc-yellow">Quiz App</h1>
+    </header>
+
+    <main class="app-grid__scrollarea p-4" style="margin-top: 3rem;">
+
+    
+        <section class="card h-500 mt-4">
+          <article
+            class="
+              card__box
+              mx-auto
+              mt-4
+              p-4
+              flex flex-col
+              justify-around
+              gap-2
+            "
+          >
+            <h2 class="card__title">Question:</h2>
+            <button class="button__bookmark">
+              <img
+                class="card__image m-0 p-0"
+                src="../../images/bookmark.svg"
+                alt=""
+                width="40"
+                height="40"
+              />
+            </button>
+            <p
+              class="card__text card__text--blue mb-4 py-2 pr-0 pl-6 rounded-md"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              libero doloremque, laboriosam velit deleniti repudiandae.
+            </p>
+            <!-- <details class="card__answer-details mb-4 rounded-lg">
+            <summary class="card__show-answer rounded-lg py-2 px-0">Show Answer</summary>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quibusdam.
+            Tenetur pariatur repudiandae maiores minus officiis a optio consequuntur
+            nihil.
+          </details> -->
+            <button class="button button--blue self-center">
+              Show answer
+            </button>
+            <ul
+              class="
+                card__list
+                flex
+                items-center
+                justify-evenly
+                flex-wrap
+                gap-2
+              "
+            >
+              <li class="card__item py-2 px-3 rounded-md">Antwort</li>
+              <li class="card__item py-2 px-3 rounded-md card__item--right">
+                Antwort
+              </li>
+              <li class="card__item py-2 px-3 rounded-md card__item--wrong">
+                Antwort
+              </li>
+              <li class="card__item py-2 px-3 rounded-md">Antwort</li>
+            </ul>
+          </article>
+        </section>
+      
+        <section class="card h-500">
+          <article
+            class="
+              card__box
+              mx-auto
+              mt-4
+              p-4
+              flex flex-col
+              justify-around
+              gap-2
+            "
+          >
+            <h2 class="card__title">Question:</h2>
+            <button class="button__bookmark">
+              <img
+                class="card__image m-0 p-0"
+                src="../../images/bookmark.svg"
+                alt=""
+                width="40"
+                height="40"
+              />
+            </button>
+            <p
+              class="card__text card__text--blue mb-4 py-2 pr-0 pl-6 rounded-md"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              libero doloremque, laboriosam velit deleniti repudiandae.
+            </p>
+            <!-- <details class="card__answer-details mb-4 rounded-lg">
+            <summary class="card__show-answer rounded-lg py-2 px-0">Show Answer</summary>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quibusdam.
+            Tenetur pariatur repudiandae maiores minus officiis a optio consequuntur
+            nihil.
+          </details> -->
+            <button class="button button--blue self-center mb-4">
+              Show answer
+            </button>
+            <ul
+              class="
+                card__list
+                flex
+                items-center
+                justify-evenly
+                flex-wrap
+                gap-2
+              "
+            >
+              <li class="card__item py-2 px-3 rounded-md">Antwort</li>
+              <li class="card__item py-2 px-3 rounded-md card__item--right">
+                Antwort
+              </li>
+              <li class="card__item py-2 px-3 rounded-md card__item--wrong">
+                Antwort
+              </li>
+              <li class="card__item py-2 px-3 rounded-md">Antwort</li>
+            </ul>
+          </article>
+        </section>
+
+    </main>
+
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link"
+            ><i class="footer-nav__icon fas fa-home"></i>
+          </a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link"
+            ><i class="footer-nav__icon far fa-bookmark"></i
+          ></a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link"
+            ><i class="footer-nav__icon fas fa-newspaper"></i
+          ></a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link"
+            ><i class="footer-nav__icon far fa-user-circle"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

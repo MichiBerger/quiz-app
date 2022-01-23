@@ -1,0 +1,77 @@
+.container {
+  max-height: 100vh;
+  max-width: 375px;
+  border: 1px solid black;
+}
+.card {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 375px;
+  overflow-y: scroll;
+}
+.card__box {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-background-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.card__bookmark {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  border-style: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card__icon {
+  font-size: 2rem;
+  fill: var(--color-fc-yellow);
+}
+.card__icon:hover {
+  fill: var(--color-red);
+}
+.card__text {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  color: var(--color-blue-text);
+}
+.card__answer {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border-style: none;
+  font-weight: 400;
+  list-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  color: #fff;
+  background: var(--color-blue);
+  font-size: 112.5%;
+  align-self: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.card__text--answer {
+  margin-top: -0.75rem;
+  margin-bottom: 0;
+}
+.tag__list--card {
+  display: flex;
+  gap: 0.5rem;
+}
+.tag__item--card {
+}
+.tag__item:hover {
+  background-color: var(--color-green);
+  color: #fff;
+  cursor: pointer;
+}
