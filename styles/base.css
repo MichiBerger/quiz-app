@@ -10,6 +10,7 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   background-color: var(--color-background-grey);
+  max-width: 375px;
 }
 h1,
 h2,
