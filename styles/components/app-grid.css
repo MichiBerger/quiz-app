@@ -1,8 +1,25 @@
 .app-grid {
   display: grid;
   grid-template-rows: 48px 1fr 48px;
+  grid-template-areas: "header" "main" "footer";
 }
 
-.app-grid__scrollarea {
-  overflow-y: auto;
+.app-grid__header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  grid-area: "header";
+}
+
+.app-grid__main {
+  color: white;
+  height: 100vh;
+  overflow-y: scroll;
+  grid-area: "main";
+}
+
+.app-grid__nav {
+  position: sticky;
+  bottom: 0;
+  grid-area: "footer";
 }
