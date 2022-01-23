@@ -2,3 +2,22 @@
   display: flex;
   flex-direction: column;
 }
+.create-form__label {
+  background-color: var(--color-bg-dark);
+  color: var(--color-fc-yellow);
+  width: 100%;
+  padding: 0.5rem;
+}
+.create-form__textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.create-form__input {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.create-form__submit {
+  padding: 1rem;
+  width: 50%;
+  align-self: center;
+}
