@@ -34,7 +34,7 @@
   font-size: 2rem;
   fill: var(--color-fc-yellow);
 }
-.card__icon:hover {
+.card__icon--red {
   fill: var(--color-red);
 }
 .card__text {
@@ -65,8 +65,6 @@
 .tag__list--card {
   display: flex;
   gap: 0.5rem;
-}
-.tag__item--card {
 }
 .tag__item:hover {
   background-color: var(--color-green);
