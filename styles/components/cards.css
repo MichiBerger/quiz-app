@@ -66,11 +66,12 @@
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.5rem;
 }
-.tag__item--card {
+/* .tag__item--card {
   flex-grow: 1;
-}
+} */
 .tag__item:hover {
   background-color: var(--color-green);
   color: #fff;
