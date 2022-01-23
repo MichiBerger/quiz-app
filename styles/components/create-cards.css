@@ -1,6 +1,7 @@
 .create-form {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .create-form__label {
   background-color: var(--color-bg-dark);
@@ -18,6 +19,10 @@
 }
 .create-form__submit {
   padding: 1rem;
+  margin-top: 1rem;
   width: 50%;
   align-self: center;
+  background-color: var(--color-fc-yellow);
+  color: var(--color-bg-dark);
+  border-radius: 15px;
 }
