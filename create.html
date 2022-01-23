@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | Create Questions</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body class="app-grid">
+    <h1 class="header__title" id="create-questions">Create</h1>
+
+    <main class="app-grid__scrollarea">
+      <form action="" class="create-form">
+        <div class="create-form__wrap">
+          <label class="create-form__label" for="add-question"
+            >Add your question</label
+          >
+          <textarea
+            class="create-form__textarea"
+            name="add-question"
+            id="add-question"
+            cols="30"
+            rows="10"
+            placeholder="add your fancy question here"
+          ></textarea>
+        </div>
+        <div class="create-form__wrap">
+          <label class="create-form__label" for="add-answer"
+            >Add your question</label
+          >
+          <textarea
+            class="create-form__textarea"
+            name="add-answer"
+            id="add-answer"
+            cols="30"
+            rows="10"
+            placeholder="add your fancy answer here"
+          ></textarea>
+        </div>
+        <div class="create-form__wrap">
+          <label class="create-form__label" for="add-tags">Tags</label>
+          <input
+            class="create-form__input"
+            type="text"
+            id="add-tags"
+            placeholder="Add a comma after each tag"
+          />
+        </div>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </main>
+    <!-- icons instead of img for the footer-nav-->
+
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="index.html"><i>Home</i></a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="bookmarks.html"><i>Bookmarks</i></a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#create-questions"><i>Create</i></a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="profile.html"><i>Profile</i></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
