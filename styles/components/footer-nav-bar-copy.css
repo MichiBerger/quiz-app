@@ -1,0 +1,24 @@
+.nav {
+  background-color: var(--color-bg-dark);
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 0.5rem; */
+  display: flex;
+  justify-content: space-around;
+}
+.display-contents {
+  display: contents;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  
+}
+img:hover {
+  background-color: #fff;
+}

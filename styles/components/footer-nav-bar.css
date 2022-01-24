@@ -6,12 +6,7 @@
   padding: 0.5rem;
   z-index: 1;
 }
-.footer-nav--second {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-  bottom: 100px;
-}
+
 .footer-nav--active {
   background-color: #6e85a2;
 }
