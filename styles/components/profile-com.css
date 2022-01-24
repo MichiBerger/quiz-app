@@ -1,53 +1,31 @@
-.container {
-  max-height: 100vh;
-  max-width: 375px;
-  border: 1px solid black;
-}
 .profile {
-  padding: 1rem;
+  padding: 3rem 1rem 0;
   display: flex;
   flex-direction: column;
+  color: var(--color-bg-dark);
 }
 .profile__wrapper--image {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
   gap: 1rem;
 }
-
 .profile__figure {
   display: flex;
 }
 .profile__image {
   border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--color-fc-yellow);
 }
 .profile__name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-bg-dark);
 }
 .profile__about-me {
-  margin-bottom: 1.5rem;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   color: var(--color-blue-text);
   border-radius: 5px;
-}
-.profile__skills {
-  margin-bottom: 0.5rem;
-}
-.tag__list--profile {
-  margin-bottom: 1.5rem;
-}
-.submit__input--profile {
-  font-size: 112.5%;
-  background-color: var(--color-bg-dark);
-  color: var(--color-fc-yellow);
-  padding: 1rem 1.5rem;
-  align-self: center;
-  cursor: pointer;
-  border-radius: 15px;
 }
 .tag__list--profile {
   display: flex;
@@ -57,13 +35,23 @@
   justify-content: flex-start;
 }
 .tag__item--profile {
-  background-color: #fff;
-  color: var(--color-blue-text);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
   padding: 0.5rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--color-fc-yellow);
+}
+.profile__logout {
+  display: grid;
+  place-items: center;
+}
+.profile__input {
+  font-size: 112.5%;
+  background-color: var(--color-bg-dark);
+  color: var(--color-fc-yellow);
+  padding: 1rem 1.5rem;
+  align-self: center;
+  cursor: pointer;
+  border-radius: 15px;
 }

@@ -11,7 +11,7 @@
     <h1 class="app-grid__header title" id="title">Quiz-App</h1>
     <main class="app-grid__main">
       <section class="profile">
-        <div class="profile__wrapper--image">
+        <div class="profile__wrapper--image mb-8">
           <figure class="profile__figure">
             <img
               class="profile__image"
@@ -21,27 +21,27 @@
               height="150"
             />
           </figure>
-          <p class="profile__name">Karl-Heinz Schneider</p>
+          <p class="profile__name">Karl-Heinz Huber</p>
         </div>
-        <p class="profile__about-me">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          eos saepe placeat dignissimos pariatur sapiente illo molestias sit
-          debitis delectus?
+        <p class="profile__about-me mb-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos
+          saepe placeat dignissimos pariatur sapiente illo molestias sit debitis
+          delectus?
         </p>
-        <div class="profile__wrapper--skills">
-          <h3 class="profile__skills">Skills</h3>
-          <ul class="tag__list tag__list--profile">
-            <li class="tag__item tag__item--profile">Taghdh1</li>
-            <li class="tag__item tag__item--profile">Tagds</li>
-            <li class="tag__item tag__item--profile">lorempisjhs</li>
-            <li class="tag__item tag__item--profile">lod</li>
-            <li class="tag__item tag__item--profile">lorem</li>
-          </ul>
-        </div>
-        <form action="" class="profile__form">
-          <label class="submit__label--profile" for="logout"></label>
+        <h3 class="profile__skills mb-2">Skills</h3>
+        <ul class="tag__list tag__list--profile mb-8">
+          <li class="tag__item tag__item--profile">Taghdh1</li>
+          <li class="tag__item tag__item--profile">Tagds</li>
+          <li class="tag__item tag__item--profile">lorempisjhs</li>
+          <li class="tag__item tag__item--profile">lod</li>
+          <li class="tag__item tag__item--profile">lorem</li>
+        </ul>
+        <form action="" class="profile__logout">
+          <label class="profile__label" for="logout"
+            ><span class="sr-only">You can logout of your profile here</span></label
+          >
           <input
-            class="submit__input--profile"
+            class="profile__input"
             type="submit"
             name="logout"
             id="logout"
@@ -49,6 +49,7 @@
           />
         </form>
       </section>
+      
     </main>
     <nav class="footer-nav app-grid__nav">
       <ul class="footer-nav__list">

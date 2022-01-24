@@ -10,7 +10,6 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   background-color: var(--color-background-grey);
-  max-width: 375px;
 }
 h1,
 h2,
@@ -34,4 +33,18 @@ summary {
 a {
   text-decoration: none;
   color: black;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.display-contents {
+  display: contents;
 }
