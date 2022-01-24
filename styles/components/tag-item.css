@@ -1,0 +1,12 @@
+.tag__list {
+  text-align: center;
+  padding: 5px;
+}
+.tag__item {
+  background-color: #fff;
+  color: var(--color-blue-text);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}

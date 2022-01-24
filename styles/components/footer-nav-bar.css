@@ -1,11 +1,19 @@
-
 .footer-nav {
-  background-color: #2d3846;
+  background-color: var(--color-bg-dark);
   width: 100%;
   position: fixed;
   bottom: 0;
   padding: 0.5rem;
   z-index: 1;
+}
+.footer-nav--second {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  bottom: 100px;
+}
+.footer-nav--active {
+  background-color: #6e85a2;
 }
 .footer-nav__list {
   display: flex;
@@ -19,6 +27,9 @@
 .footer-nav__item:not(:first-of-type) {
   border-left: 1px solid var(--color-fc-yellow);
 }
+.footer-nav__item--second:not(:first-of-type) {
+  border-left: 1px solid var(--color-fc-yellow);
+}
 .footer-nav__link {
   display: flex;
   flex-grow: 1;
@@ -30,3 +41,5 @@
   min-height: 32px;
   stroke: var(--color-fc-yellow);
 }
+
+
