@@ -7,9 +7,6 @@
 .mb-20 {
   margin-bottom: 20px !important;
 }
-.mb-60 {
-  margin-bottom: 60px;
-}
 .h-48 {
   height: 48px;
 }
@@ -31,4 +28,3 @@
 .fc-yellow {
   color: var(--color-fc-yellow);
 }
-
