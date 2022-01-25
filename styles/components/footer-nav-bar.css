@@ -6,10 +6,6 @@
   padding: 0.5rem;
   z-index: 1;
 }
-
-.footer-nav--active {
-  background-color: #6e85a2;
-}
 .footer-nav__list {
   display: flex;
 }
@@ -22,8 +18,8 @@
 .footer-nav__item:not(:first-of-type) {
   border-left: 1px solid var(--color-fc-yellow);
 }
-.footer-nav__item--second:not(:first-of-type) {
-  border-left: 1px solid var(--color-fc-yellow);
+.footer-nav__item--active {
+  background-color: #fff;
 }
 .footer-nav__link {
   display: flex;

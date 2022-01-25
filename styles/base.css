@@ -24,8 +24,7 @@ ul {
   padding: 0;
 }
 li,
-button,
-summary {
+button {
   list-style: none;
   margin: 0;
   padding: 0;
