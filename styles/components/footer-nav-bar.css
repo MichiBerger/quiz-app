@@ -3,7 +3,6 @@
   width: 100%;
   position: fixed;
   bottom: 0;
-  padding: 0.5rem;
   z-index: 1;
 }
 .footer-nav__list {
@@ -15,11 +14,12 @@
   justify-content: center;
   align-items: center;
   border-left: 1px solid var(--color-fc-yellow);
+  padding: 0.5rem;
 }
 .footer-nav__item:not(:last-of-type) {
   border-left: 1px solid var(--color-fc-yellow);
 }
-.footer-nav__item--active {
+.footer-nav__list--active {
   background-color: #fff;
 }
 .footer-nav__link {
