@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App | Bookmarks</title>
+    <title>Quiz App | Create a Question</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <script
       defer
@@ -13,8 +13,9 @@
       src="./main.js"
     ></script>
   </head>
-  <body class="app-grid">
-    <h1 class="app-grid__header title" id="title">Quiz-App</h1>
+
+  <body>
+    <h1 class="app-grid__header title">Quiz-App</h1>
     <main class="app-grid__main">
       <form action="" class="create-form">
         <label class="create-form__label" for="add-question"
@@ -28,9 +29,7 @@
           rows="10"
           placeholder="add your fancy question here"
         ></textarea>
-        <label class="create-form__label" for="add-answer"
-          >Add your question</label
-        >
+        <label class="create-form__label" for="add-answer">Add your question</label>
         <textarea
           class="create-form__textarea"
           name="add-answer"
@@ -52,10 +51,11 @@
 
     <nav class="footer-nav app-grid__nav">
       <ul class="footer-nav__list">
-        <li data-js="footerHome" class="footer-nav__item footer-nav__item--active">
-          <a href="#title" class="footer-nav__link">
+        <li data-js="footerHome" class="footer-nav__item ">
+          <a href="index.html" class="footer-nav__link">
             <svg
               class="footer-nav__icon"
+              fill="#fbb461"
               stroke-width="2"
               version="1.1"
               id="Capa_1"
@@ -136,6 +136,7 @@
         </li>
       </ul>
     </nav>
-    
+
+    <!-- javascript -->
   </body>
 </html>

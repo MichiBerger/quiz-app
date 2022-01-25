@@ -13,15 +13,17 @@
       src="./main.js"
     ></script>
   </head>
-  <body class="app-grid">
-    <h1 class="app-grid__header title" id="title">Quiz-App</h1>
+
+  <body>
+    <h1 class="app-grid__header title">Quiz-App</h1>
     <main class="app-grid__main">
       <section class="card">
         <article class="card__box">
           <h2 class="card__title">Question:</h2>
-          <button class="card__bookmark">
+          <button data-js="bookmark" class="card__bookmark">
             <svg
-              class="card__icon card__icon--red"
+              data-js="colorBookmark" 
+              class="card__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -37,22 +39,27 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
             doloremque, laboriosam velit deleniti repudiandae.
           </p>
-          <button class="card__answer">Show answer</button>
+          <button data-js="answerButton" class="card__answer">
+            <span data-js="showButton" class="show-btn">Show Answer</span>
+            <span data-js="hideButton" class="hide-btn hide">Hide Answer</span>
+          </button>
+          <p data-js="answerText" class="card__text card__text--answer hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
+            doloremque, laboriosam velit deleniti repudiandae.
+          </p>
           <ul class="tag__list tag__list--card">
-            <li class="tag__item tag__item--card">Tagff1</li>
-            <li class="tag__item tag__item--card">Tag2</li>
-            <li class="tag__item tag__item--card">Tag fdhhd</li>
-            <li class="tag__item tag__item--card">Tag4</li>
+            <li class="tag__item">Tag1</li>
+            <li class="tag__item">Tag2</li>
+            <li class="tag__item">Tag3</li>
+            <li class="tag__item">Tag4</li>
           </ul>
         </article>
-      </section>
-
-      <section class="card">
         <article class="card__box">
           <h2 class="card__title">Question:</h2>
-          <button class="card__bookmark">
+          <button data-js="bookmark" class="card__bookmark">
             <svg
-              class="card__icon card__icon--red"
+              data-js="colorBookmark" 
+              class="card__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -68,12 +75,19 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
             doloremque, laboriosam velit deleniti repudiandae.
           </p>
-          <button class="card__answer">Show answer</button>
+          <button data-js="answerButton" class="card__answer">
+            <span data-js="showButton" class="show-btn">Show Answer</span>
+            <span data-js="hideButton" class="hide-btn hide">Hide Answer</span>
+          </button>
+          <p data-js="answerText" class="card__text card__text--answer hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
+            doloremque, laboriosam velit deleniti repudiandae.
+          </p>
           <ul class="tag__list tag__list--card">
-            <li class="tag__item tag__item--card">Tag1</li>
-            <li class="tag__item tag__item--card">Tag2</li>
-            <li class="tag__item tag__item--card">Tag3</li>
-            <li class="tag__item tag__item--card">Tag4</li>
+            <li class="tag__item">Tag1</li>
+            <li class="tag__item">Tag2</li>
+            <li class="tag__item">Tag3</li>
+            <li class="tag__item">Tag4</li>
           </ul>
         </article>
       </section>
@@ -81,10 +95,11 @@
 
     <nav class="footer-nav app-grid__nav">
       <ul class="footer-nav__list">
-        <li data-js="footerHome" class="footer-nav__item footer-nav__item--active">
+        <li data-js="footerHome" class="footer-nav__item ">
           <a href="index.html" class="footer-nav__link">
             <svg
               class="footer-nav__icon"
+              fill="#fbb461"
               stroke-width="2"
               version="1.1"
               id="Capa_1"
@@ -166,5 +181,6 @@
       </ul>
     </nav>
 
+    <!-- javascript -->
   </body>
 </html>

@@ -1,7 +1,6 @@
 .create-form {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
 }
 .create-form__label {
   background-color: var(--color-bg-dark);
