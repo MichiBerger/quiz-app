@@ -12,30 +12,29 @@ const logoutButton = document.querySelector('[data-js="logout-button"]');
 const logoutButtonTest = document.querySelector('[data-js="button-logout"]');
 
 // // changes color of the card bookmark
-buttonBookmark.addEventListener("click", () => {
-  colorBookmark.classList.toggle("card__icon--red");
+buttonBookmark.addEventListener('click', () => {
+  colorBookmark.classList.toggle('card__icon--red');
 });
 
 // // changes text of show answer button and shows answer text
-answerButton.addEventListener("click", () => {
-  showButton.classList.toggle("hide");
-  hideButton.classList.toggle("hide");
-  answerButton.classList.toggle("card__answer--toggle");
-  answerText.classList.toggle("hide");
+answerButton.addEventListener('click', () => {
+  showButton.classList.toggle('hide');
+  hideButton.classList.toggle('hide');
+  answerButton.classList.toggle('card__answer--toggle');
+  answerText.classList.toggle('hide');
 });
 
-
-logoutButtonTest.addEventListener("submit", (event) => {
+logoutButtonTest.addEventListener('submit', event => {
   event.preventDefault();
   let logoutTextTest = logoutButtonTest.value;
   console.log(logoutButtonTest);
-  logoutButtonTest.value = "Test";
+  logoutButtonTest.value = 'Test';
 });
 
-logoutButton.addEventListener("submit", (event) => {
+logoutButton.addEventListener('submit', event => {
   event.preventDefault();
-  alert("test");
+  alert('test');
   let logoutText = logoutButton.value;
   console.log(logoutText);
-  logoutText.value = "Hallo";
+  logoutText.value = 'Hallo';
 });

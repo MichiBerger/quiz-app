@@ -1,9 +1,7 @@
-import html from "./create-cards.html";
-
+import html from './create-cards.html';
 
 export default {
-  title: "Components/create-cards",
+  title: 'Components/create-cards',
 };
 
 export const Default = () => html;
-  
