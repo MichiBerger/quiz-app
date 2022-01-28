@@ -3,6 +3,6 @@ export function textarea() {
   console.log(textarea);
 
   textarea?.addEventListener('input', () => {
-    console.log('click');
+    console.log(textarea.value.length);
   });
 }
