@@ -12,8 +12,8 @@
   <body>
     <h1 class="app-grid__header title">Quiz-App</h1>
     <main class="app-grid__main">
-      <section data-js="card" class="card">
-        <article class="card__box">
+      <section class="card">
+        <article data-js="card" class="card__box">
           <h2 class="card__title">Question:</h2>
           <button data-js="bookmark" class="card__bookmark">
             <svg
@@ -34,7 +34,9 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
             doloremque, laboriosam velit deleniti repudiandae.
           </p>
-          <button data-js="answerButton" class="card__answer"></button>
+          <button data-js="answerButton" class="card__answer">
+            Show Answer
+          </button>
           <p data-js="answerText" class="card__text card__text--answer hide">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
             doloremque, laboriosam velit deleniti repudiandae.
@@ -48,7 +50,7 @@
         </article>
       </section>
     </main>
-    <nav class="nav">
+    <nav class="nav" data-js="navigation">
       <ul role="list" class="nav__list display-contents">
         <li class="nav__item display-contents">
           <a href="index.html" class="nav__link" data-js="nav-home">
