@@ -4,9 +4,8 @@ export function logout() {
   logoutButton?.addEventListener('click', event => {
     event.preventDefault();
 
-    const textLogoutButton =
-      logoutButton.value.trim() === 'Logout'
-        ? (logoutButton.value = 'Sign In')
-        : (logoutButton.value = 'Logout');
+    logoutButton.value.trim() === 'Logout'
+      ? (logoutButton.value = 'Sign In')
+      : (logoutButton.value = 'Logout');
   });
 }
