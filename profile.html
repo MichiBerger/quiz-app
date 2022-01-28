@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App | Profile</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <!-- <script
-      defer
-      language="javascript"
-      type="text/javascript"
-      src="./main.js"
-    ></script> -->
+    <script type="module" defer src="index.js"></script>
   </head>
 
   <body>
@@ -36,7 +31,7 @@
           debitis delectus?
         </p>
         <h3 class="profile__skills mb-2">Skills</h3>
-        <ul class="tag__list tag__list--profile mb-8">
+        <ul role="list" class="tag__list tag__list--profile mb-8">
           <li class="tag__item tag__item--profile">Taghdh1</li>
           <li class="tag__item tag__item--profile">Tagds</li>
           <li class="tag__item tag__item--profile">lorempisjhs</li>
@@ -61,7 +56,7 @@
       </section>
     </main>
     <nav class="nav">
-      <ul class="nav__list display-contents">
+      <ul role="list" class="nav__list display-contents">
         <li class="nav__item display-contents">
           <a href="index.html" class="nav__link">
             <svg
@@ -142,19 +137,5 @@
         </li>
       </ul>
     </nav>
-
-    <script>
-      const logoutButton = document.querySelector('[data-js="logout-button"]');
-      const userName = document.querySelector('[data-js="user-Name"]');
-      let userLoggeIn = true;
-
-      console.log(logoutButton);
-      console.log(userName.textContent);
-      console.log(userLoggeIn);
-
-      logoutButton.addEventListener('click', event => {
-        event.preventDefault();
-      });
-    </script>
   </body>
 </html>

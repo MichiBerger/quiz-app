@@ -1,4 +1,4 @@
-<section class="card">
+<section data-js="card" class="card">
   <article class="card__box">
     <h2 class="card__title">Question:</h2>
     <button data-js="bookmark" class="card__bookmark">
@@ -20,15 +20,12 @@
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
       doloremque, laboriosam velit deleniti repudiandae.
     </p>
-    <button data-js="answerButton" class="card__answer">
-      <span data-js="showButton" class="show-btn">Show Answer</span>
-      <span data-js="hideButton" class="hide-btn hide">Hide Answer</span>
-    </button>
+    <button data-js="answerButton" class="card__answer"></button>
     <p data-js="answerText" class="card__text card__text--answer hide">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et libero
       doloremque, laboriosam velit deleniti repudiandae.
     </p>
-    <ul class="tag__list tag__list--card">
+    <ul role="list" class="tag__list tag__list--card">
       <li class="tag__item">Tag1</li>
       <li class="tag__item">Tag2</li>
       <li class="tag__item">Tag3</li>
@@ -36,24 +33,3 @@
     </ul>
   </article>
 </section>
-
-<script>
-  console.clear();
-
-  const answerButton = document.querySelector('[data-js="answerButton"]');
-  const showButton = document.querySelector('[data-js="showButton"]');
-  const hideButton = document.querySelector('[data-js="hideButton"]');
-  const answerText = document.querySelector('[data-js="answerText"]');
-
-  console.log(answerButton);
-  console.log(showButton);
-  console.log(hideButton);
-  console.log(answerText);
-
-  answerButton.addEventListener('click', () => {
-    showButton.classList.toggle('hide');
-    hideButton.classList.toggle('hide');
-    answerButton.classList.toggle('card__answer--toggle');
-    answerText.classList.toggle('hide');
-  });
-</script>
