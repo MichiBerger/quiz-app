@@ -25,3 +25,7 @@
   color: var(--color-bg-dark);
   border-radius: 15px;
 }
+.output-counter {
+  color: black;
+  align-self: flex-end;
+}

@@ -6,39 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App | Create a Question</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script
-      defer
-      language="javascript"
-      type="text/javascript"
-      src="./main.js"
-    ></script>
+    <script type="module" defer src="index.js"></script>
   </head>
 
   <body>
     <h1 class="app-grid__header title">Quiz-App</h1>
     <main class="app-grid__main">
       <form action="" class="create-form">
+        <div class="output-counter">
+          <output>0</output>
+          <output> / 200</output>
+        </div>
         <label class="create-form__label" for="add-question"
           >Add your question</label
         >
         <textarea
+          data-js="textarea"
           class="create-form__textarea"
           name="add-question"
           id="add-question"
           cols="30"
           rows="10"
           placeholder="add your fancy question here"
+          minlength="0"
+          maxlength="200"
         ></textarea>
+        <div class="output-counter">
+          <output>0</output>
+          <output> / 200</output>
+        </div>
+
         <label class="create-form__label" for="add-answer"
           >Add your question</label
         >
         <textarea
+          data-js="textarea"
           class="create-form__textarea"
           name="add-answer"
           id="add-answer"
           cols="30"
           rows="10"
           placeholder="add your fancy answer here"
+          minlength="0"
+          maxlength="200"
         ></textarea>
         <label class="create-form__label" for="add-tags">Add your tags</label>
         <input
@@ -50,10 +60,10 @@
         <input class="create-form__submit" type="submit" value="SUBMIT" />
       </form>
     </main>
-    <nav class="nav">
-      <ul class="nav__list display-contents">
+    <nav class="nav" data-js="navigation">
+      <ul role="list" class="nav__list display-contents">
         <li class="nav__item display-contents">
-          <a href="index.html" class="nav__link">
+          <a href="index.html" class="nav__link" data-js="nav-home">
             <svg
               class="footer-nav__icon"
               stroke-width="2"
@@ -77,7 +87,7 @@
           </a>
         </li>
         <li class="nav__item display-contents">
-          <a href="bookmarks.html" class="nav__link"
+          <a href="bookmarks.html" class="nav__link" data-js="nav-bookmark"
             ><svg
               class="footer-nav__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +105,7 @@
           ></a>
         </li>
         <li class="nav__item display-contents">
-          <a href="create.html" class="nav__link"
+          <a href="create.html" class="nav__link" data-js="nav-create"
             ><svg
               class="footer-nav__icon"
               width="32"
@@ -113,7 +123,7 @@
           ></a>
         </li>
         <li class="nav__item display-contents">
-          <a href="profile.html" class="nav__link"
+          <a href="profile.html" class="nav__link" data-js="nav-profile"
             ><svg
               class="footer-nav__icon"
               width="32"
