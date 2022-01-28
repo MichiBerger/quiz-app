@@ -13,27 +13,42 @@
     <h1 class="app-grid__header title">Quiz-App</h1>
     <main class="app-grid__main">
       <form action="" class="create-form">
+        <div class="output-counter">
+          <output>0</output>
+          <output> / 200</output>
+        </div>
         <label class="create-form__label" for="add-question"
           >Add your question</label
         >
         <textarea
+          data-js="textarea"
           class="create-form__textarea"
           name="add-question"
           id="add-question"
           cols="30"
           rows="10"
           placeholder="add your fancy question here"
+          minlength="0"
+          maxlength="200"
         ></textarea>
+        <div class="output-counter">
+          <output>0</output>
+          <output> / 200</output>
+        </div>
+
         <label class="create-form__label" for="add-answer"
           >Add your question</label
         >
         <textarea
+          data-js="textarea"
           class="create-form__textarea"
           name="add-answer"
           id="add-answer"
           cols="30"
           rows="10"
           placeholder="add your fancy answer here"
+          minlength="0"
+          maxlength="200"
         ></textarea>
         <label class="create-form__label" for="add-tags">Add your tags</label>
         <input

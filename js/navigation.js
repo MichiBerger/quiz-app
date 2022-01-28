@@ -11,28 +11,28 @@ export default function Navigation(cardElement) {
   console.log(createNavButton);
   console.log(profileNavButton);
 
-  homeNavButton?.addEventListener('click', () => {
+  homeNavButton.addEventListener('click', () => {
     homeNavButton.classList.add('nav__link--active');
     bookmarkNavButton.classList.remove('nav__link--active');
     createNavButton.classList.remove('nav__link--active');
     profileNavButton.classList.remove('nav__link--active');
   });
 
-  bookmarkNavButton?.addEventListener('click', () => {
+  bookmarkNavButton.addEventListener('click', () => {
     homeNavButton.classList.remove('nav__link--active');
     bookmarkNavButton.classList.add('nav__link--active');
     createNavButton.classList.remove('nav__link--active');
     profileNavButton.classList.remove('nav__link--active');
   });
 
-  createNavButton?.addEventListener('click', () => {
+  createNavButton.addEventListener('click', () => {
     homeNavButton.classList.remove('nav__link--active');
     bookmarkNavButton.classList.remove('nav__link--active');
     createNavButton.classList.add('nav__link--active');
     profileNavButton.classList.remove('nav__link--active');
   });
 
-  profileNavButton?.addEventListener('click', () => {
+  profileNavButton.addEventListener('click', () => {
     homeNavButton.classList.remove('nav__link--active');
     bookmarkNavButton.classList.remove('nav__link--active');
     createNavButton.classList.remove('nav__link--active');
