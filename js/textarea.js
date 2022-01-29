@@ -10,15 +10,26 @@ export function textarea() {
   const counterOutputQuestion = document.querySelector(
     '[data-js="counter-output-question"]'
   );
+  const maxCharacters = 200;
 
   textAreaAnswer.addEventListener('input', () => {
     counterOutputAnswer.textContent = textAreaAnswer.value.length;
+
+    if (counterOutputAnswer.textContent >= 185) {
+      counterOutputAnswer.style.color = 'red';
+    } else {
+      counterOutputAnswer.style.color = 'black';
+    }
   });
 
   textAreaQuestion.addEventListener('input', () => {
-    console.log(textAreaQuestion.value.length);
-    counterOutputQuestion.textContent =
-      Number(counterOutputQuestion.textContent) -
-      Number(textAreaQuestion.value.length);
+    const remainingCharacter = maxCharacters - textAreaQuestion.value.length;
+    counterOutputQuestion.textContent = `${remainingCharacter} characters remaining`;
+    if (remainingCharacter <= 15) {
+      counterOutputQuestion.style.color = 'red';
+    } else {
+      counterOutputQuestion.style.color = 'black';
+    }
+    console.log(remainingCharacter);
   });
 }
