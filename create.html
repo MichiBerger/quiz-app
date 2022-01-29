@@ -14,14 +14,14 @@
     <main class="app-grid__main">
       <form action="" class="create-form">
         <div class="output-counter">
-          <output>0</output>
+          <output data-js="counter-output-answer">0</output>
           <output> / 200</output>
         </div>
         <label class="create-form__label" for="add-question"
           >Add your question</label
         >
         <textarea
-          data-js="textarea"
+          data-js="textarea-answer"
           class="create-form__textarea"
           name="add-question"
           id="add-question"
@@ -32,15 +32,14 @@
           maxlength="200"
         ></textarea>
         <div class="output-counter">
-          <output>0</output>
-          <output> / 200</output>
+          <output data-js="counter-output-question">200</output>
         </div>
 
         <label class="create-form__label" for="add-answer"
           >Add your question</label
         >
         <textarea
-          data-js="textarea"
+          data-js="textarea-question"
           class="create-form__textarea"
           name="add-answer"
           id="add-answer"

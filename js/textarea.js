@@ -1,8 +1,24 @@
+console.clear();
 export function textarea() {
-  const textarea = document.querySelector('[data-js="textarea"]');
-  console.log(textarea);
+  const textAreaAnswer = document.querySelector('[data-js="textarea-answer"]');
+  const textAreaQuestion = document.querySelector(
+    '[data-js="textarea-question"]'
+  );
+  const counterOutputAnswer = document.querySelector(
+    '[data-js="counter-output-answer"]'
+  );
+  const counterOutputQuestion = document.querySelector(
+    '[data-js="counter-output-question"]'
+  );
 
-  textarea?.addEventListener('input', () => {
-    console.log(textarea.value.length);
+  textAreaAnswer.addEventListener('input', () => {
+    counterOutputAnswer.textContent = textAreaAnswer.value.length;
+  });
+
+  textAreaQuestion.addEventListener('input', () => {
+    console.log(textAreaQuestion.value.length);
+    counterOutputQuestion.textContent =
+      Number(counterOutputQuestion.textContent) -
+      Number(textAreaQuestion.value.length);
   });
 }
