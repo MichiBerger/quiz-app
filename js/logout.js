@@ -30,7 +30,7 @@ export function logout() {
     const userName = 'KarlSchneider';
     const userPassword = 'test';
 
-    if (userNameInput.value === userName && userPasswordInput === userPassword) {
+    if (userNameInput.value.trim() === userName && userPasswordInput.value.trim() === userPassword) {
       loggedInSection.classList.remove('hide');
       loggedInSection.classList.add('profile');
       loggedOutSection.classList.add('hide');
