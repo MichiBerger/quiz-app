@@ -21,3 +21,8 @@
 .nav__link--active {
   background-color: #5b718e;
 }
+.nav__icon {
+  min-width: 32px;
+  min-height: 32px;
+  stroke: var(--color-fc-yellow);
+}

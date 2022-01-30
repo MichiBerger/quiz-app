@@ -28,3 +28,7 @@
 .fc-yellow {
   color: var(--color-fc-yellow);
 }
+
+.hide {
+  display: none;
+}

@@ -12,7 +12,38 @@
   <body>
     <h1 class="app-grid__header title">Quiz-App</h1>
     <main class="app-grid__main">
-      <section class="profile">
+      <!-- Login Section - hidden -->
+      <section data-js="logged-out-section" class="hide">
+        <form action="" class="profile__form" data-js="login-form">
+          <label class="profile__label--login" for="userName">Username</label>
+          <input
+            data-js="userName"
+            id="userName"
+            type="text"
+            class="profile__input mb-8"
+            required
+          />
+          <label class="profile__label--login" for="password">Password</label>
+          <input
+            data-js="userPassword"
+            id="password"
+            type="password"
+            class="profile__input mb-8"
+            required
+          />
+          <label class="profile__label" for="login"></label>
+          <input
+            data-js="login-button"
+            class="profile__button"
+            type="submit"
+            name="login"
+            id="login"
+            value="Login"
+          />
+        </form>
+      </section>
+      <!-- Logout Section -->
+      <section data-js="logged-in-section" class="profile">
         <div class="profile__wrapper--image mb-8">
           <figure class="profile__figure">
             <img
@@ -39,14 +70,10 @@
           <li class="tag__item tag__item--profile">lorem</li>
         </ul>
         <form action="" class="profile__logout">
-          <label class="profile__label" for="logout"
-            ><span class="sr-only"
-              >You can logout of your profile here</span
-            ></label
-          >
+          <label class="profile__label" for="logout"></label>
           <input
             data-js="logout-button"
-            class="profile__input"
+            class="profile__button"
             type="submit"
             name="logout"
             id="logout"
@@ -60,7 +87,7 @@
         <li class="nav__item display-contents">
           <a href="index.html" class="nav__link" data-js="nav-home">
             <svg
-              class="footer-nav__icon"
+              class="nav__icon"
               stroke-width="2"
               fill="var(--color-fc-yellow)"
               version="1.1"
@@ -84,7 +111,7 @@
         <li class="nav__item display-contents">
           <a href="bookmarks.html" class="nav__link" data-js="nav-bookmark"
             ><svg
-              class="footer-nav__icon"
+              class="nav__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -102,7 +129,7 @@
         <li class="nav__item display-contents">
           <a href="create.html" class="nav__link" data-js="nav-create"
             ><svg
-              class="footer-nav__icon"
+              class="nav__icon"
               width="32"
               height="32"
               viewBox="0 0 24 24"
@@ -120,7 +147,7 @@
         <li class="nav__item display-contents">
           <a href="profile.html" class="nav__link" data-js="nav-profile"
             ><svg
-              class="footer-nav__icon"
+              class="nav__icon"
               width="32"
               height="32"
               viewBox="0 0 24 24"

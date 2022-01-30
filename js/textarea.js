@@ -1,4 +1,3 @@
-console.clear();
 export function textarea() {
   const textAreaAnswer = document.querySelector('[data-js="textarea-answer"]');
   const textAreaQuestion = document.querySelector(
@@ -12,7 +11,7 @@ export function textarea() {
   );
   const maxCharacters = 200;
 
-  textAreaAnswer.addEventListener('input', () => {
+  textAreaAnswer?.addEventListener('input', () => {
     counterOutputAnswer.textContent = textAreaAnswer.value.length;
 
     if (counterOutputAnswer.textContent >= 185) {
@@ -22,7 +21,7 @@ export function textarea() {
     }
   });
 
-  textAreaQuestion.addEventListener('input', () => {
+  textAreaQuestion?.addEventListener('input', () => {
     const remainingCharacter = maxCharacters - textAreaQuestion.value.length;
     counterOutputQuestion.textContent = `${remainingCharacter} characters remaining`;
     if (remainingCharacter <= 15) {
