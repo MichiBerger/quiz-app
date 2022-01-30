@@ -25,15 +25,39 @@
     <li class="tag__item tag__item--profile">lorem</li>
   </ul>
   <form action="" class="profile__logout">
-    <label class="profile__label" for="logout"
-      ><span class="sr-only">You can logout of your profile here</span></label
-    >
+    <label class="profile__label" for="logout"></label>
     <input
-      class="profile__input"
+      class="profile__button"
       type="submit"
       name="logout"
       id="logout"
       value="Logout"
+    />
+  </form>
+</section>
+<section class="profile profile--login hide">
+  <form action="" class="profile__form" data-js="login-form">
+    <label class="profile__label--login" for="userName">Your Name</label>
+    <input
+      data-js="userName"
+      id="userName"
+      type="text"
+      class="profile__input mb-8"
+    />
+    <label class="profile__label--login" for="user-name">Your Name</label>
+    <input
+      data-js="userPassword"
+      id="user-name"
+      type="text"
+      class="profile__input mb-8"
+    />
+    <label class="profile__label" for="sign-in"></label>
+    <input
+      class="profile__button"
+      type="submit"
+      name="sign-in"
+      id="sign-in"
+      value="Sign In"
     />
   </form>
 </section>

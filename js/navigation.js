@@ -6,11 +6,6 @@ export default function Navigation(cardElement) {
   const createNavButton = cardElement.querySelector('[data-js="nav-create"]');
   const profileNavButton = cardElement.querySelector('[data-js="nav-profile"]');
 
-  console.log(homeNavButton);
-  console.log(bookmarkNavButton);
-  console.log(createNavButton);
-  console.log(profileNavButton);
-
   homeNavButton.addEventListener('click', () => {
     homeNavButton.classList.add('nav__link--active');
     bookmarkNavButton.classList.remove('nav__link--active');

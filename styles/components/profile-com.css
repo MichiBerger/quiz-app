@@ -2,6 +2,7 @@
   padding: 3rem 1rem 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: var(--color-bg-dark);
 }
 .profile__wrapper--image {
@@ -46,7 +47,7 @@
   display: grid;
   place-items: center;
 }
-.profile__input {
+.profile__button {
   font-size: 112.5%;
   background-color: var(--color-bg-dark);
   color: var(--color-fc-yellow);
@@ -54,4 +55,54 @@
   align-self: center;
   cursor: pointer;
   border-radius: 15px;
+  min-width: 150px;
+}
+
+/* Login-Section */
+.profile--login {
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.profile__form {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 500px) {
+  .profile__form {
+    align-items: center;
+    width: 400px;
+  }
+}
+.profile__label--login {
+  /* background-color: var(--color-bg-dark); */
+  color: var(--color-fc-yellow);
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .profile__label--login {
+    width: 100%;
+  }
+}
+.profile__input {
+  padding: 1rem;
+  margin-top: 0;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--color-bg-dark);
+  background-color: transparent;
+}
+.profile__input::placeholder {
+  color: var(--color-bg-dark);
+}
+@media (min-width: 500px) {
+  .profile__input {
+    width: 100%;
+  }
+}
+.profile__error-message {
+  color: red;
 }
