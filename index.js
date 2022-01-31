@@ -1,6 +1,6 @@
 console.clear();
 import Card from './js/Cards.js';
-import Navigation from './js/navigation.js';
+import Navigation from './js/Navigation.js';
 
 import { logout } from './js/logout.js';
 import { textarea } from './js/textarea.js';
