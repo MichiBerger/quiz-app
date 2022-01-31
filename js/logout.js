@@ -1,13 +1,19 @@
 export function logout() {
   const logoutButton = document.querySelector('[data-js="logout-button"]');
   const loginButton = document.querySelector('[data-js="login-button"]');
-  const loggedOutSection = document.querySelector('[data-js="logged-out-section"]');
-  const loggedInSection = document.querySelector('[data-js="logged-in-section"]');
+  const loggedOutSection = document.querySelector(
+    '[data-js="logged-out-section"]'
+  );
+  const loggedInSection = document.querySelector(
+    '[data-js="logged-in-section"]'
+  );
   const userNameInput = document.querySelector('[data-js="userName"]');
   const userPasswordInput = document.querySelector('[data-js="userPassword"]');
 
   const loginForm = document.querySelector('[data-js="login-form"]');
-  const failedTextMessage = document.querySelector('[data-js="failed-login-text"]');
+  const failedTextMessage = document.querySelector(
+    '[data-js="failed-login-text"]'
+  );
 
   console.log(loggedOutSection);
   console.log(loggedInSection);
@@ -30,7 +36,10 @@ export function logout() {
     const userName = 'KarlSchneider';
     const userPassword = 'test';
 
-    if (userNameInput.value.trim() === userName && userPasswordInput.value.trim() === userPassword) {
+    if (
+      userNameInput.value.trim() === userName &&
+      userPasswordInput.value.trim() === userPassword
+    ) {
       loggedInSection.classList.remove('hide');
       loggedInSection.classList.add('profile');
       loggedOutSection.classList.add('hide');
