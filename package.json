@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaGru/quiz-app.git"
+    "url": "git+https://github.com/MichiBerger/quiz-app.git"
   },
   "bugs": {
-    "url": "https://github.com/FaGru/quiz-app/issues"
+    "url": "https://github.com/MichiBerger/quiz-app/issues"
   },
-  "homepage": "https://github.com/FaGru/quiz-app#readme",
+ 
   "devDependencies": {
     "@babel/core": "7.16.7",
     "@storybook/addon-actions": "6.4.13",
