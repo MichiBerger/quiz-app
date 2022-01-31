@@ -11,8 +11,9 @@ const allNavElements = document.querySelectorAll('[data-js="navigation"]');
 allCardElements.forEach(cardElement => {
   Card(cardElement);
 });
-allNavElements.forEach(cardElement => {
-  Navigation(cardElement);
+allNavElements.forEach(() => {
+  Navigation();
+  // Navigation(navElement);
 });
 
 textarea();
