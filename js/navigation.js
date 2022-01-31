@@ -1,36 +1,31 @@
-export default function Navigation(cardElement) {
-  const homeNavButton = cardElement.querySelector('[data-js="nav-home"]');
-  const bookmarkNavButton = cardElement.querySelector(
-    '[data-js="nav-bookmark"]'
-  );
-  const createNavButton = cardElement.querySelector('[data-js="nav-create"]');
-  const profileNavButton = cardElement.querySelector('[data-js="nav-profile"]');
+export default function Navigation() {
+  const allPages = document.querySelectorAll('[data-page]');
+  const allButtons = document.querySelectorAll('[data-nav]');
+  console.log(allPages);
+  console.log(allButtons);
 
-  homeNavButton.addEventListener('click', () => {
-    homeNavButton.classList.add('nav__link--active');
-    bookmarkNavButton.classList.remove('nav__link--active');
-    createNavButton.classList.remove('nav__link--active');
-    profileNavButton.classList.remove('nav__link--active');
-  });
+  // Schaue in jedem button und halte bei jedem einzelnen Button an
+  allButtons.forEach(button => {
+    // dann überprüfe den einzelnen button ob er geklickt wird
+    button.addEventListener('click', event => {
+      // wenn geklickt dann soll er zu allen Häusern gehen und bei jedem einzelnen Haus stehen bleiben
+      allPages.forEach(page => {
+        // nun soll jedes einzelne Haus das Licht ausmachen und somit nicht mehr sichtbar sein
+        page.classList.add('hide');
+      });
 
-  bookmarkNavButton.addEventListener('click', () => {
-    homeNavButton.classList.remove('nav__link--active');
-    bookmarkNavButton.classList.add('nav__link--active');
-    createNavButton.classList.remove('nav__link--active');
-    profileNavButton.classList.remove('nav__link--active');
-  });
+      // Nun soll jeder Name wo wir aktuell klingeln gespeichert werden
+      const currentButton = event.currentTarget.getAttribute('data-nav');
+      console.log(currentButton);
+      // Dieser gespeicherte Name soll zudem in dem jeweiligen Haus gespeichert werden
+      const currentPage = document.querySelector(
+        `[data-page="${currentButton}"]`
+      );
+      console.log(currentPage);
 
-  createNavButton.addEventListener('click', () => {
-    homeNavButton.classList.remove('nav__link--active');
-    bookmarkNavButton.classList.remove('nav__link--active');
-    createNavButton.classList.add('nav__link--active');
-    profileNavButton.classList.remove('nav__link--active');
-  });
-
-  profileNavButton.addEventListener('click', () => {
-    homeNavButton.classList.remove('nav__link--active');
-    bookmarkNavButton.classList.remove('nav__link--active');
-    createNavButton.classList.remove('nav__link--active');
-    profileNavButton.classList.add('nav__link--active');
+      // Das Haus mit dem jeweiligen Namen wo wir aktuell sind soll das Licht anmachen
+      currentPage.classList.remove('hide');
+      console.log(currentPage);
+    });
   });
 }

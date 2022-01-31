@@ -172,7 +172,11 @@
         </form>
       </section>
       <!-- Login Section - hidden -->
-      <section data-page="profile" data-js="logged-out-section" class="hide">
+      <section
+        data-page="profile"
+        data-js="logged-out-section"
+        class="hide profile--login"
+      >
         <output data-js="failed-login-text" class="profile__error-message hide"
           >Invalid username and/or password</output
         >
@@ -250,16 +254,11 @@
         </form>
       </section>
     </main>
-    <nav class="nav" data-js="navigation">
+    <nav class="nav app-grid__nav" data-js="navigation">
       <ul role="list" class="nav__list display-contents">
-        <li class="nav__item display-contents">
-          <!-- <a
-            href="index.html"
-            class="nav__link nav__link--active"
-            
-          > -->
+        <li class="display-contents">
           <svg
-            data-js="nav-home"
+            data-nav="home"
             class="nav__icon"
             stroke-width="2"
             fill="var(--color-fc-yellow)"
@@ -279,13 +278,10 @@
               d="M228.065,125.587l-51.619-51.615V23.263c0-4.142-3.357-7.5-7.5-7.5c-4.143,0-7.5,3.358-7.5,7.5v35.709L120.43,17.96  c-2.928-2.929-7.677-2.928-10.606,0L2.197,125.587c-2.929,2.929-2.929,7.678,0,10.606c2.93,2.929,7.678,2.929,10.608,0l18.72-18.72  v89.525c0,4.142,3.357,7.5,7.5,7.5h152.215c4.143,0,7.5-3.358,7.5-7.5v-89.524l18.721,18.719c1.464,1.464,3.384,2.196,5.303,2.196  c1.919,0,3.839-0.732,5.304-2.197C230.994,133.264,230.994,128.516,228.065,125.587z M183.739,199.499H46.524v-97.025l68.604-68.604  l68.611,68.606V199.499z"
             />
           </svg>
-          <!-- </a> -->
         </li>
-        <li class="nav__item display-contents">
-          <!-- <a href="bookmarks.html" class="nav__link" 
-            > -->
+        <li class="display-contents">
           <svg
-            data-js="nav-bookmark"
+            data-nav="bookmark"
             class="nav__icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -298,14 +294,10 @@
           >
             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
           </svg>
-          <!-- </a> -->
         </li>
-        <li class="nav__item display-contents">
-          <!-- <a href="create.html" class="nav__link" 
-            > -->
-
+        <li class="display-contents">
           <svg
-            data-js="nav-create"
+            data-nav="create"
             class="nav__icon"
             width="32"
             height="32"
@@ -320,13 +312,10 @@
               stroke-linejoin="round"
             />
           </svg>
-          <!-- </a> -->
         </li>
-        <li class="nav__item display-contents">
-          <!-- <a href="profile.html" class="nav__link" 
-            > -->
+        <li class="display-contents">
           <svg
-            data-js="nav-profile"
+            data-nav="profile"
             class="nav__icon"
             width="32"
             height="32"
@@ -341,7 +330,6 @@
               stroke-linejoin="round"
             />
           </svg>
-          <!-- </a> -->
         </li>
       </ul>
     </nav>

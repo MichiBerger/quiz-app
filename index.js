@@ -1,6 +1,6 @@
 console.clear();
 import Card from './js/Cards.js';
-import Navigation from './js/Navigation.js';
+import Navigation from './js/navigation.js';
 
 import { logout } from './js/logout.js';
 import { textarea } from './js/textarea.js';
@@ -11,8 +11,9 @@ const allNavElements = document.querySelectorAll('[data-js="navigation"]');
 allCardElements.forEach(cardElement => {
   Card(cardElement);
 });
-allNavElements.forEach(cardElement => {
-  Navigation(cardElement);
+allNavElements.forEach(() => {
+  Navigation();
+  // Navigation(navElement);
 });
 
 textarea();

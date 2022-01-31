@@ -22,4 +22,5 @@
   position: sticky;
   bottom: 0;
   grid-area: 'footer';
+  z-index: 1;
 }
